@@ -10,14 +10,14 @@ import { useState, useContext } from 'react';
 
 import { LoginContext } from '../LoginContext';
 
-function Login({ token, setToken }) {
+function Login() {
 
     const { t, i18n } = useTranslation();
 
     const [inputUsername, setInputUsername] = useState("")
     const [inputPassword, setInputPassword] = useState("")
     const [loggedUsername, setLoggedUsername] = useState("")
-
+    const [token, setToken] = useContext(LoginContext)
     const [errorMessage, setErrorMessage] = useState("")
 
     const loginUser = () => {
