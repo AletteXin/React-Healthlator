@@ -7,7 +7,7 @@ function LeftNav() {
 
         <div>
             <div className="leftBorder">
-                <div><Link to="/main">
+                <div><Link to="/">
                     <button class="submitbutton">My Portal</button>
                     </Link>
                 </div>

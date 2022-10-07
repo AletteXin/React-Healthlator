@@ -54,11 +54,11 @@ function InputForm({ setEntryRecorded, entryRecorded }) {
 
     const submitNewEntry = (e) => {
         e.preventDefault()
-        fetch('https://healthrecordcommunicator.herokuapp.com/api/records/create', {
+        fetch('https://healthrecordalette.herokuapp.com/api/records/create', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Access-Control-Allow-Origin': 'http://localhost:3000',
+                'Access-Control-Allow-Origin': '*',
             },
             body: JSON.stringify({
                 Name: name,
@@ -165,7 +165,7 @@ function InputForm({ setEntryRecorded, entryRecorded }) {
                                 <Col ></Col>
                                 <Col className={maleGenderStyle} onClick={changeToMaleGenderStyle}>{t("male.answer")}</Col>
                                 <Col className={femaleGenderStyle} onClick={changeToFemaleGenderStyle}>{t("female.answer")}</Col>
-                                
+
                             </Row>
 
                             <Row className="fieldRow">
@@ -174,7 +174,7 @@ function InputForm({ setEntryRecorded, entryRecorded }) {
                                     <label>
                                         <DatePicker
                                             selected={birthdate}
-                                            onChange={birthdate => setBirthDate(birthdate)} 
+                                            onChange={birthdate => setBirthDate(birthdate)}
                                             className="inputBox" />
                                     </label>
                                 </Col>
@@ -262,8 +262,8 @@ function InputForm({ setEntryRecorded, entryRecorded }) {
                                 secondSymptom={t("chestpain.label")} setSecond={setChestPain}
                                 thirdSymptom={t("legnumb.label")} setThird={setlegNumb} />
                             <ChooseSymptom firstSymptom={t("handnumb.label")} setFirst={setHandNumb}
-                                secondSymptom={t("facenumb.label")} setSecond={setFaceNumb} 
-                                thirdSymptom={t("abdominalpain.label")} setThird={setAbdominalPain}/>
+                                secondSymptom={t("facenumb.label")} setSecond={setFaceNumb}
+                                thirdSymptom={t("abdominalpain.label")} setThird={setAbdominalPain} />
 
                         </Container>
 

@@ -2,7 +2,7 @@ export const translations_en = {
     
     "login.username": "Username", 
     "login.password": "Password",
-    
+    "login.repassword": "Reenter Password",
     
     "retrieve.title": "RETRIEVE PREVIOUS RECORD",
     "formid.title": "Form ID",

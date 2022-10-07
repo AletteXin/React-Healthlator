@@ -1,8 +1,8 @@
 export const translations_cn = {
     
-    "login.username": "Username",
-    "login.password": "Password",
-
+    "login.username": "用户名",
+    "login.password": "密码",
+    "login.repassword": "重新进入密码",
     
     "retrieve.title": "检索以前的记录",
     "formid.title": "表格编号",

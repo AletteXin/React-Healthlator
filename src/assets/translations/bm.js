@@ -1,7 +1,8 @@
 export const translations_bm = {
     
-    "login.username": "Username",
-    "login.password": "Password",
+    "login.username": "Nama Pengguna",
+    "login.password": "Kata Laluan",
+    "login.repassword": "Masuk Semula Kata Laluan",
     
     "retrieve.title": "REKOD LAMA",
     "formid.title": "Nombor borang",
