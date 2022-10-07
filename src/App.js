@@ -1,5 +1,5 @@
 import "./i18n";
-import React, { Suspense, useState, useEffect } from "react";
+import React, { Suspense, useState, useEffect, useContext } from "react";
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Login from './components/Login';
@@ -8,7 +8,7 @@ import LeftNav from './components/LeftNav';
 import MyPortal from './pages/MyPortal';
 import UserPage from './components/UserPage';
 import RetrievePrevious from './components/RetrievePrevious';
-import {LoginContext} from './LoginContext';
+import { LoginContext } from './LoginContext';
 
 function App() {
 
@@ -46,7 +46,7 @@ function App() {
             </Route>
 
             <Route path="/">
-              {token == "" ? <Login /> : <MyPortal />}
+              {token != "" ?  <MyPortal /> : <Login /> }
 
             </Route>
 

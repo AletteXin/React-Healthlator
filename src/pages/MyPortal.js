@@ -8,13 +8,17 @@ import { useState, useContext } from 'react';
 
 import { LoginContext } from '../LoginContext';
 
-function MyPortal({token, setToken}) {
+function MyPortal() {
 
     const { t, i18n } = useTranslation();
-    
-    const logout = () => {
+    const [token, setToken] = useContext(LoginContext);
 
-        setToken("")
+    const logout = (e) => {
+        e.preventDefault();
+        console.log("leggo");
+        console.log(typeof token);
+        console.log(token);
+        setToken("");
 
     }
 
@@ -22,12 +26,17 @@ function MyPortal({token, setToken}) {
     return (
 
 
-                <div>
-
+     
+            <div className="blocks">
+                <div className="App">
+                    <div>
+                        <Title />
+                        <Language />
             <button onClick={(e) => logout(e)} > Logout </button>
                     
                 </div>
-
+                </div>
+        </div>
 
     );
 }

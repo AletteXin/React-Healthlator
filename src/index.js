@@ -6,10 +6,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { LoginProvider } from './LoginContext';
+
 
 ReactDOM.render(
   <React.StrictMode>
+    <LoginProvider>
     <App />
+    </LoginProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -20,8 +20,8 @@ function Login() {
     const [token, setToken] = useContext(LoginContext)
     const [errorMessage, setErrorMessage] = useState("")
 
-    const loginUser = () => {
-
+    const loginUser = (e) => {
+        e.preventDefault();
         fetch('https://healthrecordalette.herokuapp.com/api/user/show', {
 
             method: 'POST',
@@ -38,6 +38,10 @@ function Login() {
             setErrorMessage(data.login_details[0][0]['Errormessage']);
             setToken(data.login_details[0][0]["id"]);
             setLoggedUsername(data.login_details[0][0]["Username"]);
+            console.log(typeof token);
+            console.log(token);
+            console.log(data.login_details[0][0]["id"]);
+            
 
         }))
 
@@ -51,62 +55,61 @@ function Login() {
                     <Title />
                     <Language />
 
-{token}
-                        <div>
+                    <div>
 
-                            <div className="UserInputBox">
-                                <div className="boxSubtitle">
-                                    LOGIN TO YOUR ACCOUNT
+                        <div className="UserInputBox">
+                            <div className="boxSubtitle">
+                                LOGIN TO YOUR ACCOUNT
                 </div>
-                                <Container>
+                            <Container>
 
-                                    <Container className="subBox">
-                                        <form onSubmit={(e) => loginUser(e)}>
+                                <Container className="subBox">
+                                    <form onSubmit={(e) => loginUser(e)}>
 
-                                            <Row className="boxSubtitle"></Row>
+                                        <Row className="boxSubtitle"></Row>
 
-                                            <Row className="fieldRow">
-                                                <Col className="fieldRow">{t("login.username")}</Col>
-                                                <Col className="inputField">
-                                                    <label>
-                                                        <input
-                                                            className="inputBox"
-                                                            type="text"
-                                                            value={inputUsername}
-                                                            onChange={(e) => setInputUsername(e.target.value)}>
-                                                        </input>
-                                                    </label>
-                                                </Col>
-                                            </Row>
+                                        <Row className="fieldRow">
+                                            <Col className="fieldRow">{t("login.username")}</Col>
+                                            <Col className="inputField">
+                                                <label>
+                                                    <input
+                                                        className="inputBox"
+                                                        type="text"
+                                                        value={inputUsername}
+                                                        onChange={(e) => setInputUsername(e.target.value)}>
+                                                    </input>
+                                                </label>
+                                            </Col>
+                                        </Row>
 
-                                            <Row className="fieldRow">
-                                                <Col className="fieldRow">{t("login.password")}</Col>
-                                                <Col className="inputField">
-                                                    <label>
-                                                        <input
-                                                            className="inputBox"
-                                                            type="text"
-                                                            value={inputPassword}
-                                                            onChange={(e) => setInputPassword(e.target.value)}>
-                                                        </input>
-                                                    </label>
-                                                </Col>
-                                            </Row>
-                                            <input
-                                                type="submit"
-                                                value={t("submit.title")}
-                                                className="submitbutton"
-                                            />
-                                        </form>
-                                    </Container>
-
+                                        <Row className="fieldRow">
+                                            <Col className="fieldRow">{t("login.password")}</Col>
+                                            <Col className="inputField">
+                                                <label>
+                                                    <input
+                                                        className="inputBox"
+                                                        type="text"
+                                                        value={inputPassword}
+                                                        onChange={(e) => setInputPassword(e.target.value)}>
+                                                    </input>
+                                                </label>
+                                            </Col>
+                                        </Row>
+                                        <input
+                                            type="submit"
+                                            value={t("submit.title")}
+                                            className="submitbutton"
+                                        />
+                                    </form>
                                 </Container>
-                                {errorMessage}
-                            </div>
+
+                            </Container>
+                            {errorMessage}
+                        </div>
 
                     New here?
                     <SignUp />
-                        </div>
+                    </div>
 
                 </div>
 
