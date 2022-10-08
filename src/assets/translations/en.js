@@ -42,7 +42,9 @@ export const translations_en = {
     "facenumb.label": "Numbness in face",
     "smoker.label": "Smoker",
     "abdominalpain.label": "Abdominal Pain",
-
+    "vomit.label": "Vomiting",
+    "dizziness.label": "Dizziness",
+    "sleeping.label": "Sleeping difficulties",
 
     "diabetes.label": "Diabetes",
     "highbloodpressure.label": "High blood pressure",
@@ -51,6 +53,10 @@ export const translations_en = {
     "chronickidney.label": "Kidney Disease",
     "arthritis.label": "Arthritis",
     "pancreaticcancer.label": "Pancreatic Cancer",
+    "stroke.label": "Stroke",
+    "alzheimer.label": "Alzheimer",
+    "cancer.label": "Cancer",
+    "liverdisease.label": "Liver Disease",
     "livercancer.label": "Liver Cancer",
     "colorectalcancer.label": "Colorectal Cancer",
     "copd.label": "COPD",

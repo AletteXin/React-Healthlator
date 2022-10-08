@@ -37,18 +37,21 @@ function InputForm({ setEntryRecorded, entryRecorded }) {
     const [handNumb, setHandNumb] = useState("False");
     const [faceNumb, setFaceNumb] = useState("False");
     const [abdominalPain, setAbdominalPain] = useState("False");
+    const [vomit, setVomit] = useState("False");
+    const [dizziness, setDizziness] = useState("False");
+    const [sleepingDiff, setSleepingDiff] = useState("False");
     const [diabetes, setDiabetes] = useState("False");
     const [highBlood, setHighBlood] = useState("False");
     const [highCholesterol, setHighCholesterol] = useState("False");
     const [asthma, setAsthma] = useState("False");
     const [kidneyDisease, setKidneyDisease] = useState("False");
     const [arthritis, setArthritis] = useState("False");
-    const [pancreaticCancer, setPancreaticCancer] = useState("False");
-    const [liverCancer, setLiverCancer] = useState("False");
-    const [colorectalCancer, setColorectalCancer] = useState("False");
+    const [cancer, setCancer] = useState("False");
+    const [liverDisease, setLiverDisease] = useState("False");
+    const [stroke, setStroke] = useState("False");
     const [COPD, setCOPD] = useState("False");
     const [depression, setDepression] = useState("False");
-    const [lungCancer, setLungCancer] = useState("False");
+    const [alzheimer, setAlzheimer] = useState("False");
 
     const [maleGenderStyle, setMaleGenderStyle] = useState("genderBox")
     const [femaleGenderStyle, setFemaleGenderStyle] = useState("genderBoxChosen")
@@ -83,18 +86,21 @@ function InputForm({ setEntryRecorded, entryRecorded }) {
                 Handnumbness: handNumb,
                 Facenumbness: faceNumb,
                 Abdominalpain: abdominalPain,
+                Vomit: vomit, 
+                Dizziness: dizziness,
+                Sleepingdiff: sleepingDiff,
                 Diabetes: diabetes,
                 Highbloodpressure: highBlood,
                 Highcholesterol: highCholesterol,
                 Asthma: asthma,
                 Kidneydisease: kidneyDisease,
                 Arthritis: arthritis,
-                Pancreaticcancer: pancreaticCancer,
-                Livercancer: liverCancer,
-                Colorectalcancer: colorectalCancer,
+                Cancer: cancer,
+                Liverdisease: liverDisease,
+                Stroke: stroke,
                 COPD: COPD,
                 Depression: depression,
-                Lungcancer: lungCancer,
+                Alzheimer: alzheimer,
             })
         }).then(response => response.json().then(data => {
             console.log("Connected")
@@ -266,6 +272,9 @@ function InputForm({ setEntryRecorded, entryRecorded }) {
                             <ChooseSymptom firstSymptom={t("handnumb.label")} setFirst={setHandNumb}
                                 secondSymptom={t("facenumb.label")} setSecond={setFaceNumb}
                                 thirdSymptom={t("abdominalpain.label")} setThird={setAbdominalPain} />
+                            <ChooseSymptom firstSymptom={t("vomit.label")} first={vomit}
+                                secondSymptom={t("dizziness.label")} second={dizziness}
+                                thirdSymptom={t("sleeping.label")} third={sleepingDiff} />
 
                         </Container>
 
@@ -277,12 +286,12 @@ function InputForm({ setEntryRecorded, entryRecorded }) {
                             <ChooseSymptom firstSymptom={t("asthma.label")} setFirst={setAsthma}
                                 secondSymptom={t("chronickidney.label")} setSecond={setKidneyDisease}
                                 thirdSymptom={t("arthritis.label")} setThird={setArthritis} />
-                            <ChooseSymptom firstSymptom={t("pancreaticcancer.label")} setFirst={setPancreaticCancer}
-                                secondSymptom={t("livercancer.label")} setSecond={setLiverCancer}
-                                thirdSymptom={t("colorectalcancer.label")} setThird={setColorectalCancer} />
-                            <ChooseSymptom firstSymptom={t("copd.label")} setFirst={setCOPD}
-                                secondSymptom={t("depression.label")} setSecond={setDepression}
-                                thirdSymptom={t("lungcancer.label")} setThird={setLungCancer} />
+                            <ChooseSymptom firstSymptom={t("cancer.label")} first={cancer}
+                                secondSymptom={t("liverdisease.label")} second={liverDisease}
+                                thirdSymptom={t("stroke.label")} third={stroke} />
+                            <ChooseSymptom firstSymptom={t("copd.label")} first={COPD}
+                                secondSymptom={t("depression.label")} second={depression}
+                                thirdSymptom={t("alzheimer.label")} third={alzheimer} />
                         </Container>
 
                         <input type="submit" value={t("submit.title")} className="submitbutton" />

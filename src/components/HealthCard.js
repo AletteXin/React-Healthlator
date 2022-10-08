@@ -34,18 +34,21 @@ function HealthCard({previousName, previousId, entryRecorded, setEntryRecorded})
     const [handNumb, setHandNumb] = useState("False");
     const [faceNumb, setFaceNumb] = useState("False");
     const [abdominalPain, setAbdominalPain] = useState("False");
+    const [vomit, setVomit] = useState("False");
+    const [dizziness, setDizziness] = useState("False");
+    const [sleepingDiff, setSleepingDiff] = useState("False");
     const [diabetes, setDiabetes] = useState("False");
     const [highBlood, setHighBlood] = useState("False");
     const [highCholesterol, setHighCholesterol] = useState("False");
     const [asthma, setAsthma] = useState("False");
     const [kidneyDisease, setKidneyDisease] = useState("False");
     const [arthritis, setArthritis] = useState("False");
-    const [pancreaticCancer, setPancreaticCancer] = useState("False");
-    const [liverCancer, setLiverCancer] = useState("False");
-    const [colorectalCancer, setColorectalCancer] = useState("False");
+    const [cancer, setCancer] = useState("False");
+    const [liverDisease, setLiverDisease] = useState("False");
+    const [stroke, setStroke] = useState("False");
     const [COPD, setCOPD] = useState("False");
     const [depression, setDepression] = useState("False");
-    const [lungCancer, setLungCancer] = useState("False");
+    const [alzheimer, setAlzheimer] = useState("False");
 
     useEffect(() => {
         fetch('https://healthrecordalette.herokuapp.com/api/records/show', {
@@ -84,18 +87,21 @@ function HealthCard({previousName, previousId, entryRecorded, setEntryRecorded})
             setHandNumb(data.record_details[0][0]['Handnumbness']);
             setFaceNumb(data.record_details[0][0]['Facenumbness']);
             setAbdominalPain(data.record_details[0][0]['Abdominalpain']);
+            setVomit(data.record_details[0][0]['Vomit']);
+            setDizziness(data.record_details[0][0]['Dizziness']);
+            setSleepingDiff(data.record_details[0][0]['SleepingDiff']);
             setDiabetes(data.record_details[0][0]['Diabetes']);
             setHighBlood(data.record_details[0][0]['Highbloodpressure']);
             setHighCholesterol(data.record_details[0][0]['Highcholesterol']);
             setAsthma(data.record_details[0][0]['Asthma']);
             setKidneyDisease(data.record_details[0][0]['Kidneydisease']);
             setArthritis(data.record_details[0][0]['Arthritis']);
-            setPancreaticCancer(data.record_details[0][0]['Pancreaticcancer']);
-            setLiverCancer(data.record_details[0][0]['Livercancer']);
-            setColorectalCancer(data.record_details[0][0]['Colorectalcancer']);
+            setCancer(data.record_details[0][0]['Cancer']);
+            setLiverDisease(data.record_details[0][0]['Liverdisease']);
+            setStroke(data.record_details[0][0]['Stroke']);
             setCOPD(data.record_details[0][0]['COPD']);
             setDepression(data.record_details[0][0]['Depression']);
-            setLungCancer(data.record_details[0][0]['Lungcancer']);
+            setAlzheimer(data.record_details[0][0]['Alzheimer']);
         }))
 
     });
@@ -161,6 +167,9 @@ function HealthCard({previousName, previousId, entryRecorded, setEntryRecorded})
                                 <SymptomRow firstSymptom={t("handnumb.label")} first={handNumb}
                                     secondSymptom={t("facenumb.label")} second={faceNumb} 
                                     thirdSymptom={t("abdominalpain.label")} third={abdominalPain} />
+                            <SymptomRow firstSymptom={t("vomit.label")} first={vomit}
+                                secondSymptom={t("dizziness.label")} second={dizziness}
+                                thirdSymptom={t("sleeping.label")} third={sleepingDiff} />
                             </Container>
 
                             <Container className="subBox">
@@ -171,12 +180,12 @@ function HealthCard({previousName, previousId, entryRecorded, setEntryRecorded})
                                 <SymptomRow firstSymptom={t("asthma.label")} first={asthma}
                                     secondSymptom={t("chronickidney.label")} second={kidneyDisease}
                                     thirdSymptom={t("arthritis.label")} third={arthritis} />
-                                <SymptomRow firstSymptom={t("pancreaticcancer.label")} first={pancreaticCancer}
-                                    secondSymptom={t("livercancer.label")} second={liverCancer}
-                                    thirdSymptom={t("colorectalcancer.label")} third={colorectalCancer} />
+                                <SymptomRow firstSymptom={t("cancer.label")} first={cancer}
+                                    secondSymptom={t("liverdisease.label")} second={liverDisease}
+                                    thirdSymptom={t("stroke.label")} third={stroke} />
                                 <SymptomRow firstSymptom={t("copd.label")} first={COPD}
                                     secondSymptom={t("depression.label")} second={depression}
-                                    thirdSymptom={t("lungcancer.label")} third={lungCancer} />
+                                    thirdSymptom={t("alzheimer.label")} third={alzheimer} />
                             </Container>
 
                         </Container>

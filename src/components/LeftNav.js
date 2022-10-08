@@ -15,7 +15,7 @@ function LeftNav() {
                     <Link to="/newform">
                         <button class="submitbutton">Create new form</button></Link>
                 </div>
-                <div><Link to="/retrieveprevious"><button class="submitbutton">Retrieve previous</button>
+                <div><Link to="/retrieveprevious"><button class="submitbutton">Retrieve form</button>
                 </Link>
                 </div>
             </div>

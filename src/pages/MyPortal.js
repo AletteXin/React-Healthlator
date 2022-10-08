@@ -63,6 +63,9 @@ function MyPortal() {
                     <button class="submitbutton" onClick={(e) => logout(e)} > Logout </button>
 
                 </div>
+                <footer className="footer">
+
+                </footer>
             </div>
         </div>
 
