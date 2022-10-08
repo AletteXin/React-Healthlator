@@ -200,7 +200,7 @@ function InputForm({ setEntryRecorded, entryRecorded }) {
                                     </label>
                                 </Col>
                             </Row>
-
+{/* 
                             <Row className="fieldRow">
                                 <Col className="fieldRow">{t("medications.label")}</Col>
                                 <Col className="inputField">
@@ -212,7 +212,23 @@ function InputForm({ setEntryRecorded, entryRecorded }) {
                                         </textarea>
                                     </label>
                                 </Col>
+                            </Row> */}
+
+
+                            <Row className="fieldRow">
+                                <Col className="fieldRow">{t("medications.label")}</Col>
+                                <Col className="inputField">
+                                    <label>
+                                        <input
+                                            type = "file"
+                                            onChange={(e) => {
+                                            setMedications(e.target.files[0]);
+                                            }} />
+                                    </label>
+                                </Col>
                             </Row>
+
+            
 
                             <Row className="fieldRow">
                                 <Col className="fieldRow">{t("relativename.label")}</Col>
