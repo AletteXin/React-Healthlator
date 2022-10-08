@@ -8,7 +8,7 @@ import SymptomRow from './SymptomRow';
 import { useTranslation } from "react-i18next";
 import "../i18n";
 
-function HealthCard({ previousName, previousId, entryRecorded, setEntryRecorded }) {
+function HealthCard({previousName, previousId, entryRecorded, setEntryRecorded}) {
 
     const { t, i18n } = useTranslation();
     const [id, setId] = useState("");
@@ -47,15 +47,15 @@ function HealthCard({ previousName, previousId, entryRecorded, setEntryRecorded 
     const [lungCancer, setLungCancer] = useState("False");
 
     useEffect(() => {
-        fetch('https://healthrecordcommunicator.herokuapp.com/api/records/show', {
+        fetch('https://healthrecordalette.herokuapp.com/api/records/show', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                // 'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Origin': '*',
             },
             body: JSON.stringify({
                 id: previousId,
-                Name: previousName,
+                Name: 'hello',
             })
         }).then(response => response.json().then(data => {
             console.log("Connected");
@@ -111,12 +111,13 @@ function HealthCard({ previousName, previousId, entryRecorded, setEntryRecorded 
     return (
         <div>
 
-            {error != "" ?
+            {/* {error != "" ?
                 (<Container>
                     <p>{error}</p>
                     <InputForm setEntryRecorded={setEntryRecorded} entryRecorded={entryRecorded} />
-                </Container>)
-                : (<div>
+                </Container>) */}
+                {/* : ( */}
+                    <div>
                     <div className="HealthCardBox">
                         <Container>
 
@@ -178,10 +179,9 @@ function HealthCard({ previousName, previousId, entryRecorded, setEntryRecorded 
 
                         </Container>
                     </div>
-                    <Container>
-                        <button onClick={(e) => createNewForm(e)} className="submitbutton">{t("newentry.label")}</button>
-                    </Container>
-                </div>)}
+                    
+                </div>
+                {/* } */}
 
         </div>
     );

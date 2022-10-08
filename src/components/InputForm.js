@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useContext} from 'react';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import Container from 'react-bootstrap/Container';
@@ -8,12 +8,13 @@ import HealthCardField from './HealthCardField';
 import ChooseSymptom from './ChooseSymptom';
 import { useTranslation } from "react-i18next";
 import "../i18n";
-
+import { LoginContext } from '../LoginContext';
 
 function InputForm({ setEntryRecorded, entryRecorded }) {
 
 
     const { t, i18n } = useTranslation();
+    const [token, setToken] = useContext(LoginContext);
 
     const [name, setName] = useState("");
     const [gender, setGender] = useState('Female');
@@ -61,6 +62,7 @@ function InputForm({ setEntryRecorded, entryRecorded }) {
                 'Access-Control-Allow-Origin': '*',
             },
             body: JSON.stringify({
+                ID: token,
                 Name: name,
                 Gender: gender,
                 Birthdate: birthdate,
