@@ -272,9 +272,9 @@ function InputForm({ setEntryRecorded, entryRecorded }) {
                             <ChooseSymptom firstSymptom={t("handnumb.label")} setFirst={setHandNumb}
                                 secondSymptom={t("facenumb.label")} setSecond={setFaceNumb}
                                 thirdSymptom={t("abdominalpain.label")} setThird={setAbdominalPain} />
-                            <ChooseSymptom firstSymptom={t("vomit.label")} first={vomit}
-                                secondSymptom={t("dizziness.label")} second={dizziness}
-                                thirdSymptom={t("sleeping.label")} third={sleepingDiff} />
+                            <ChooseSymptom firstSymptom={t("vomit.label")} setFirst={setVomit}
+                                secondSymptom={t("dizziness.label")} setSecond={setDizziness}
+                                thirdSymptom={t("sleeping.label")} setThird={setSleepingDiff} />
 
                         </Container>
 
@@ -286,12 +286,12 @@ function InputForm({ setEntryRecorded, entryRecorded }) {
                             <ChooseSymptom firstSymptom={t("asthma.label")} setFirst={setAsthma}
                                 secondSymptom={t("chronickidney.label")} setSecond={setKidneyDisease}
                                 thirdSymptom={t("arthritis.label")} setThird={setArthritis} />
-                            <ChooseSymptom firstSymptom={t("cancer.label")} first={cancer}
-                                secondSymptom={t("liverdisease.label")} second={liverDisease}
-                                thirdSymptom={t("stroke.label")} third={stroke} />
-                            <ChooseSymptom firstSymptom={t("copd.label")} first={COPD}
-                                secondSymptom={t("depression.label")} second={depression}
-                                thirdSymptom={t("alzheimer.label")} third={alzheimer} />
+                            <ChooseSymptom firstSymptom={t("cancer.label")} setFirst={setCancer}
+                                secondSymptom={t("liverdisease.label")} setSecond={setLiverDisease}
+                                thirdSymptom={t("stroke.label")} setThird={setStroke} />
+                            <ChooseSymptom firstSymptom={t("copd.label")} setFirst={setCOPD}
+                                secondSymptom={t("depression.label")} setSecond={setDepression}
+                                thirdSymptom={t("alzheimer.label")} setThird={setAlzheimer} />
                         </Container>
 
                         <input type="submit" value={t("submit.title")} className="submitbutton" />
