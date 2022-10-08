@@ -13,6 +13,7 @@ function HealthCard({previousName, previousId, entryRecorded, setEntryRecorded})
     const { t, i18n } = useTranslation();
     const [id, setId] = useState("");
     const [name, setName] = useState("");
+    const [createdOn, setCreatedOn] = useState("");
     const [gender, setGender] = useState("");
     const [birthdate, setBirthDate] = useState("");
     const [address, setAddress] = useState("");
@@ -55,13 +56,14 @@ function HealthCard({previousName, previousId, entryRecorded, setEntryRecorded})
             },
             body: JSON.stringify({
                 id: previousId,
-                Name: 'hello',
+                Name: previousName,
             })
         }).then(response => response.json().then(data => {
             console.log("Connected");
             console.log(data.record_details[0][0]["Gender"]);
             setError(data.record_details[0][0]['Errormessage']);
             setId(data.record_details[0][0]["id"]);
+            setCreatedOn(data.record_details[0][0]["Createdon"]);
             setName(data.record_details[0][0]["Name"]);
             setGender(data.record_details[0][0]["Gender"]);
             setBirthDate(data.record_details[0][0]["Birthdate"]);
@@ -125,7 +127,7 @@ function HealthCard({previousName, previousId, entryRecorded, setEntryRecorded})
                                 <Row className="boxSubtitle">{t("overview.title")}</Row>
                                 <HealthCardField field={t("formid.title")} patientInfo={id} />
                                 <HealthCardField field={t("name.label")} patientInfo={name} />
-
+                            <HealthCardField field={t("createdon.label")} patientInfo={createdOn} />
                                 {gender == "Female" ? (<Row className="fieldRow">
                                     <Col className="fieldRow">{t("gender.label")}</Col>
 

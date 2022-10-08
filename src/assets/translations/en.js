@@ -16,11 +16,12 @@ export const translations_en = {
     "chronicconditions.title": "EXISTING CHRONIC CONDITIONS",
 
     "name.label": "Name",
+    "createdon.label": "Form created on",
     "gender.label": "Gender",
     "female.answer": "Female",
     "male.answer": "Male",
     "birthdate.label": "Date of birth",
-    "address.label": "Home Address",
+    "address.label": "Home address",
     "medications.label": "Medications",
 
     "relativename.label": "Name of next of kin",

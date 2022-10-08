@@ -16,6 +16,7 @@ export const translations_cn = {
     "chronicconditions.title": "慢性病",
 
     "name.label": "姓名",
+    "createdon.label": "表格创建于",
     "gender.label": "性别",
     "female.answer": "女性",
     "male.answer": "男性",

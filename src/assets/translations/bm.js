@@ -15,6 +15,7 @@ export const translations_bm = {
     "currentsymptoms.title": "SIMPTOM SEMASA",
     "chronicconditions.title": "PENYAKIT KRONIK",
     "name.label": "Nama",
+    "createdon.label": "Rekod dicipta pada",
     "gender.label": "Janita",
     "female.answer": "Perempuan",
     "male.answer": "Lelaki",

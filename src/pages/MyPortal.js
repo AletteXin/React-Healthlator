@@ -54,15 +54,13 @@ function MyPortal() {
 
                     {records.map((form, idx) => (
                         <div>
-                            {form[0].id}
-                            {form[0].Name}
                             <HealthCard previousName={form[0].Name} previousId={form[0].id.toString()}
                                 entryRecorded="True" />
                         </div>
                     ))}
 
 
-            <button onClick={(e) => logout(e)} > Logout </button>
+                    <button class="submitbutton" onClick={(e) => logout(e)} > Logout </button>
 
                 </div>
             </div>
