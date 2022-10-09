@@ -49,18 +49,18 @@ function Login() {
 
     return (
 
-        <div className="blocks">
+        <div>
             <div className="App">
                 <div>
                     <Title />
                     <Language />
-
-                    <div>
-
-                        <div className="UserInputBox">
-                            <div className="boxSubtitle">
-                                LOGIN TO YOUR ACCOUNT
+                    <div className="subtitlelogin">
+                        {t("login.title")}
                 </div>
+                    <div>
+                        
+                        <div className="UserInputBox">
+                            
                             <Container>
 
                                 <Container className="subBox">
@@ -107,16 +107,13 @@ function Login() {
                             {errorMessage}
                         </div>
 
-                    New here?
                     <SignUp />
                     </div>
 
                 </div>
 
             </div>
-            <footer className="footer">
 
-            </footer>
         </div >
     );
 }

@@ -11,9 +11,15 @@ export const translations_cn = {
 
     "overview.title": "病人详情",
     "newentry.title": "创建新条目",
+    "login.title": "登录帐户",
+    "signup.title": "注册帐户",
     "newentry.label": "创建新条目",
     "currentsymptoms.title": "症状",
     "chronicconditions.title": "慢性病",
+
+    "portal.nav": "我的门户",
+    "retrieve.nav": "检索旧表格",
+    "newform.nav": "创建新表格",
 
     "name.label": "姓名",
     "createdon.label": "表格创建于",

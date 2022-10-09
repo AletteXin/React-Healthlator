@@ -2,7 +2,7 @@ export const translations_en = {
     
     "login.username": "Username", 
     "login.password": "Password",
-    "login.repassword": "Reenter Password",
+    "login.repassword": "Reenter password",
     
     "retrieve.title": "RETRIEVE PREVIOUS RECORD",
     "formid.title": "Form ID",
@@ -11,9 +11,15 @@ export const translations_en = {
     
     "overview.title": "PATIENT DETAILS",
     "newentry.title": "CREATE NEW RECORD",
+    "login.title": "LOGIN INTO YOUR ACCOUNT",
+    "signup.title": "NEW HERE? SIGN UP FOR AN ACCOUNT",
     "newentry.label": "Create new record",
     "currentsymptoms.title": "CURRENT SYMPTOMS",
     "chronicconditions.title": "EXISTING CHRONIC CONDITIONS",
+
+    "portal.nav": "My portal",
+    "retrieve.nav": "Retrieve form",
+    "newform.nav": "Create form",
 
     "name.label": "Name",
     "createdon.label": "Form created on",
@@ -50,13 +56,13 @@ export const translations_en = {
     "highbloodpressure.label": "High blood pressure",
     "highcholesterol.label": "High cholesterol",
     "asthma.label": "Asthma",
-    "chronickidney.label": "Kidney Disease",
+    "chronickidney.label": "Kidney disease",
     "arthritis.label": "Arthritis",
     "pancreaticcancer.label": "Pancreatic Cancer",
     "stroke.label": "Stroke",
     "alzheimer.label": "Alzheimer",
     "cancer.label": "Cancer",
-    "liverdisease.label": "Liver Disease",
+    "liverdisease.label": "Liver disease",
     "livercancer.label": "Liver Cancer",
     "colorectalcancer.label": "Colorectal Cancer",
     "copd.label": "COPD",

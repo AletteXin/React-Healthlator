@@ -9,8 +9,14 @@ export const translations_bm = {
     "submit.title": "Hantar",
     "formcreated.message": "Rekod anda telah dibina. Nombor borang tersebut: ",
 
+    "portal.nav": "Portal saya",
+    "retrieve.nav": "Dapat borang lama",
+    "newform.nav": "Cipta borang baru",
+
     "overview.title": "MAKLUMAT PESAKIT",
     "newentry.title": "BINA REKOD BARU",
+    "login.title": "LOG MASUK AKAUN",
+    "signup.title": "MENDAFTER AKAUN BARU",
     "newentry.label": "Bina Rekod Baru",
     "currentsymptoms.title": "SIMPTOM SEMASA",
     "chronicconditions.title": "PENYAKIT KRONIK",

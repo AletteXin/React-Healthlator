@@ -26,12 +26,14 @@ function UserInput({ setPreviousName, setPreviousId, setEntryRecorded }) {
 
 
     return (
+        <div>
+            <Row className="subtitle">{t("retrieve.title")}</Row>
         <div className="UserInputBox">
             <Container>
-
+                
                 <Container className="subBox">
                     <form onSubmit={(e) => submitUser(e)}>
-                        <Row className="boxSubtitle">{t("retrieve.title")}</Row>
+                        
 
                         <Row className="fieldRow">
                             <Col className="fieldRow">{t("name.label")}</Col>
@@ -69,7 +71,7 @@ function UserInput({ setPreviousName, setPreviousId, setEntryRecorded }) {
                 </Container>
 
             </Container>
-
+            </div>
         </div>
     );
 }

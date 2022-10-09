@@ -1,24 +1,54 @@
-
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import "../i18n";
 
 function LeftNav() {
+
+    const { t, i18n } = useTranslation();
+    const [isNavExpanded, setIsNavExpanded] = useState(false)
+
 
     return (
 
         <div>
-            <div className="leftBorder">
-                <div><Link to="/">
-                    <button class="submitbutton">My Portal</button>
-                    </Link>
+            <nav className="navigation">
+
+                <button className="hamburger"
+                    onClick={() => {
+                        setIsNavExpanded(!isNavExpanded);
+                    }}
+                >
+                    MENU
+                </button>
+
+                <div className="navigationMenu">
+                    <div
+                        className={
+                            isNavExpanded ? "navigationMenu expanded" : "navigationMenu"
+                        }
+                    >
+                        {/* <div className="leftBorder"> */}
+                        <ul>
+                            <li>
+
+                                <Link to="/">
+                                    <button className="submitbutton">{t("portal.nav")}</button>
+                                </Link>
+                            </li>
+                            <li >
+                                <Link to="/newform">
+                                    <button className="submitbutton">{t("newform.nav")}</button></Link>
+                            </li>
+                            <li><Link to="/retrieveprevious"><button className="submitbutton">{t("retrieve.nav")}</button>
+                            </Link>
+                            </li>
+                        </ul>
+
+
+                    </div>
                 </div>
-                <div >
-                    <Link to="/newform">
-                        <button class="submitbutton">Create new form</button></Link>
-                </div>
-                <div><Link to="/retrieveprevious"><button class="submitbutton">Retrieve form</button>
-                </Link>
-                </div>
-            </div>
+            </nav>
         </div>
 
     );

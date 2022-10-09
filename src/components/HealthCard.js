@@ -126,11 +126,13 @@ function HealthCard({previousName, previousId, entryRecorded, setEntryRecorded})
                 </Container>) */}
                 {/* : ( */}
                     <div>
+                
                     <div className="HealthCardBox">
+                    
                         <Container>
-
+                        <Row className="boxSubtitle">{t("overview.title")}</Row>
                             <Container className="subBox">
-                                <Row className="boxSubtitle">{t("overview.title")}</Row>
+
                                 <HealthCardField field={t("formid.title")} patientInfo={id} />
                                 <HealthCardField field={t("name.label")} patientInfo={name} />
                             <HealthCardField field={t("createdon.label")} patientInfo={createdOn} />

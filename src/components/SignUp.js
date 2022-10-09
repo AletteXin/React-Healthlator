@@ -45,13 +45,13 @@ function SignUp() {
 
 
         <div>
-
+            <div className="subtitlelogin">
+                {t("signup.title")}
+                </div>
 
 
             <div className="UserInputBox">
-                <div className="boxSubtitle">
-                    SIGN UP FOR AN ACCOUNT
-                </div>
+
                 <Container>
 
                     <Container className="subBox">
@@ -110,7 +110,9 @@ function SignUp() {
                 </Container>
 
             </div>
+            <footer className="footer">
 
+            </footer>
 
         </div>
 
