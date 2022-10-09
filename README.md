@@ -26,7 +26,7 @@ Frontend:
 
 Database:
 - Postgres 
-Backend code can be accessed here: https://github.com/AletteXin/Healthlator_Backend
+Backend code can be accessed here: https://github.com/AletteXin/Flask_Healthlator_Backend
 
 ### Key features 
 
