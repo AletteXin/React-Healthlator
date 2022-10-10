@@ -2,9 +2,10 @@
 
 
 ### Overview
+Healthlator is a trilingual tool to simplify the language barrier between patients and healthcare providers. 
 
-Healthlator is a digital health tool to assist people, especially aging populations in multicultural countries, make independent hospital visits. 
-
+### What is the purpose of using Healthlator? 
+A common problem in multi-cultural societies, such as Malaysia, is the mismatch in language proficiency betweeen healthcare professionals and patients. This problem is most prevalent amongst the rural and older populations in Malaysia who have to make independent hospital visits. With this digital tool, users and/or their caregivers can fill up an online form in a language that they are comfortable in. The form contains important health information such as medications taken, name of closest relative, current symptoms, and chronic underlying conditions. Upon arrival at the hospital, the patient can show the completed form to a healthcare provider who will be able to see the same information in a different language, one that they are comfortable in. 
 
 ### Live demo
 Visit a deployed version of the platform here: https://beamish-klepon-68bcdc.netlify.app/
@@ -31,6 +32,6 @@ Backend code can be accessed here: https://github.com/AletteXin/Flask_Healthlato
 ### Key features 
 
 
-### What is the purpose of using Healthlator? 
-A common problem in multi-cultural societies, such as Malaysia, is the mismatch in language proficiency betweeen healthcare professionals and patients. This problem is most prevalent amongst the rural and older populations in Malaysia who have to make independent hospital visits. With this digital tool, users and/or their caregivers can fill up an online form in a language that they are comfortable in. The form contains important health information such as medications taken, name of closest relative, current symptoms, and chronic underlying conditions. Upon arrival at the hospital, the patient can show the completed form to a healthcare provider who will be able to see the same information in a different language, one that they are comfortable in. 
+
+
 
