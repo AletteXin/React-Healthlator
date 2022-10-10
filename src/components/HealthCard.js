@@ -120,12 +120,6 @@ function HealthCard({previousName, previousId, entryRecorded, setEntryRecorded})
     return (
         <div>
 
-            {/* {error != "" ?
-                (<Container>
-                    <p>{error}</p>
-                    <InputForm setEntryRecorded={setEntryRecorded} entryRecorded={entryRecorded} />
-                </Container>) */}
-                {/* : ( */}
                     <div>
                 
                     <div className="HealthCardBox">

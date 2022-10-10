@@ -7,7 +7,10 @@ export const translations_cn = {
     "retrieve.title": "检索以前的记录",
     "formid.title": "表格编号",
     "submit.title": "提交",
-    "formcreated.message": "您的表单已创建。您的表单编号是 ",
+    "formretrieved.message": "您的表单已创建。您的表单编号是 ",
+    "clearform.message": "您的表格如下所示。请在离开此页面之前重置以清除表格。",
+    "reset.button": "重置",
+    
 
     "overview.title": "病人详情",
     "newentry.title": "创建新条目",

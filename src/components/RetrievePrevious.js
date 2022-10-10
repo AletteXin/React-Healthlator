@@ -30,8 +30,8 @@ function RetrievePrevious({ previousName, setPreviousName, previousId, setPrevio
                         
                         {previousName != "" ?
                         (<div>
-                                <div>Your form is shown below. Please reset before leaving this page to clear form.</div>
-                                <button onClick={(e) => clearForm(e)} className="submitbutton">Reset </button>
+                                <div>{t("formretrieved.message")}</div>
+                                <button onClick={(e) => clearForm(e)} className="submitbutton"> {t("reset.button")} </button>
                                 <HealthCard previousName={previousName} previousId={previousId}
                             entryRecorded={entryRecorded} setEntryRecorded={setEntryRecorded} />
                             
