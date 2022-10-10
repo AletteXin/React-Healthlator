@@ -104,7 +104,7 @@ function HealthCard({previousName, previousId, entryRecorded, setEntryRecorded})
             setAlzheimer(data.record_details[0][0]['Alzheimer']);
         }))
 
-    });
+    }, []);
 
     console.log(name)
     console.log(previousId)
@@ -113,6 +113,7 @@ function HealthCard({previousName, previousId, entryRecorded, setEntryRecorded})
 
 
     const createNewForm = (e) => {
+        e.preventDefault();
         window.location.reload();
     };
 

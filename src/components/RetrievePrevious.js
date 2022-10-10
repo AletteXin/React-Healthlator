@@ -12,6 +12,11 @@ function RetrievePrevious({ previousName, setPreviousName, previousId, setPrevio
     setEntryRecorded }) {
 
 
+    const clearForm = (e) => {
+        setPreviousName("")
+    };
+
+
     return (
         <div className="blocks">
             <div className="App">
@@ -21,10 +26,20 @@ function RetrievePrevious({ previousName, setPreviousName, previousId, setPrevio
                 <Suspense fallback={null}>
                     <UserInput previousName={previousName} setPreviousName={setPreviousName} previousId={previousId} setPreviousId={setPreviousId}
                         entryRecorded={entryRecorded} setEntryRecorded={setEntryRecorded} />
-                    {previousName != "" ?
-                        (<HealthCard previousName={previousName} previousId={previousId} entryRecorded={entryRecorded} setEntryRecorded={setEntryRecorded} />)
-                        : (<InputForm entryRecorded={entryRecorded} setEntryRecorded={setEntryRecorded} />)}
+                        
+                        
+                        {previousName != "" ?
+                        (<div>
+                                <div>Your form is shown below. Please reset before leaving this page to clear form.</div>
+                                <button onClick={(e) => clearForm(e)} className="submitbutton">Reset </button>
+                                <HealthCard previousName={previousName} previousId={previousId}
+                            entryRecorded={entryRecorded} setEntryRecorded={setEntryRecorded} />
+                            
+                        </div>)
+                            : (<div><footer className="footer">
 
+                            </footer></div>)}
+                    
                     <footer className="footer">
 
                     </footer>

@@ -46,7 +46,7 @@ function App() {
             </Route>
 
             <Route path="/">
-              {token != "" ?  <MyPortal /> : <Login /> }
+              {token != "" ? <MyPortal setEntryRecorded= {setEntryRecorded} setPreviousName = {setPreviousName} /> : <Login /> }
 
             </Route>
 

@@ -9,7 +9,7 @@ import { useState, useContext, useEffect } from 'react';
 
 import { LoginContext } from '../LoginContext';
 
-function MyPortal() {
+function MyPortal({setEntryRecorded, setPreviousName}) {
 
     const { t, i18n } = useTranslation();
     const [token, setToken] = useContext(LoginContext);
@@ -36,8 +36,8 @@ function MyPortal() {
 
     const logout = (e) => {
         e.preventDefault();
-        console.log(typeof token);
-        console.log(token);
+        setEntryRecorded("False")
+        setPreviousName("False")
         setToken("");
 
     }
