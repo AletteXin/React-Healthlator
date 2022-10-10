@@ -22,16 +22,16 @@ Second option: Fill in the "Sign Up" fields
 
 # Technologies used 
 
-Frontend:
+### Frontend
 - React 
 
-Database:
+### Database
 - Postgres 
 Backend code can be accessed here: https://github.com/AletteXin/Flask_Healthlator_Backend
 
 # Key features 
 
-**Easy and intuitive use of medical form**
+### Easy and intuitive use of medical form
 - Patients are able to list out their personal details, current symptoms and chronic conditions in a form
 <img src="https://user-images.githubusercontent.com/85789376/194939035-41e719bd-4fe6-4292-bacc-02b25dff15c9.png" height="300"> 
 
@@ -45,7 +45,7 @@ Backend code can be accessed here: https://github.com/AletteXin/Flask_Healthlato
 
 
 
-**Login feature** 
+### Login feature
 
 - Patients are able to create and login to an account to keep track of past forms 
 
@@ -54,28 +54,28 @@ Backend code can be accessed here: https://github.com/AletteXin/Flask_Healthlato
 
 <img src="https://user-images.githubusercontent.com/85789376/194941261-094c5ca5-b8e2-4f63-8149-b78da1e825d4.png" height="300"> 
 
-**Trilingual**
+### Trilingual
 - The forms are trilingual (English, Chinese, Malay), enabling doctors with various language proficiencies comprehend the patient's current condition 
 
-English
+**English**
 
 <img src="https://user-images.githubusercontent.com/85789376/194940467-43b80cb5-33cf-4ced-8e15-b8cc6035dc85.png" height="300"> 
 
-Chinese
+**Chinese**
 
 <img src="https://user-images.githubusercontent.com/85789376/194939032-f2bdd97a-4830-49d2-b7d8-6f2e305cb74d.png" height="300"> 
 
-Malay
+**Malay**
 
 <img src="https://user-images.githubusercontent.com/85789376/194941263-11e6cc69-daea-428b-b398-db473c2b3449.png" height="300"> 
 
-**Responsive design**
+### Responsive design
 - Responsive UI/UX design for enhanced user experience across desktops and mobile phones 
 
 <img src="https://user-images.githubusercontent.com/85789376/194939040-c19affd9-2805-4805-9748-c40fbd2b38a4.png" height="300"> 
 
 
-**Medical fields advised by practising doctors**
+### Medical fields advised by practising doctors
 - The relevance and comprehensiveness of the list of symptoms and chronic conditions on the form has been vetted by pracising doctors 
 
 # Acknowledgements 
