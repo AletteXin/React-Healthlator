@@ -35,7 +35,7 @@ export const translations_bm = {
     "medications.label": "Ubat",
 
     "relativename.label": "Nama Waris Terdekat",
-    "relativenumber.label": "Telephone Nombor Waris Terdekat",
+    "relativenumber.label": "Tel Nombor Waris Terdekat",
     
 
     "others.label": "Penyakit lain-lain",
