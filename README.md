@@ -27,6 +27,8 @@ Second option: Fill in the "Sign Up" fields
 
 ### Database
 - Postgres 
+- Flask (Python)
+
 Backend code can be accessed here: https://github.com/AletteXin/Flask_Healthlator_Backend
 
 # Key features 
