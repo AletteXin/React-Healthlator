@@ -40,7 +40,7 @@ Backend code can be accessed here: https://github.com/AletteXin/Flask_Healthlato
 - Once the form is filled out, patients will be given a form ID
 <img src="https://user-images.githubusercontent.com/85789376/194938392-ab82f3f8-cd3a-4a5c-80e3-932d74362f1b.png" height="300"> 
 
-- Patients and doctors can retrive the filled form by reentering the name and form ID on the retrive form page 
+- Patients and doctors can retrieve the filled form by reentering the name and form ID on the retrive form page 
 <img src="https://user-images.githubusercontent.com/85789376/194939965-8318107c-b043-4c30-8e73-a1519ea5b172.png" height="300"> 
 
 <img src="https://user-images.githubusercontent.com/85789376/194939041-317ce278-5383-4f47-9c63-e861a725e2e0.png" height="300"> 
@@ -52,6 +52,7 @@ Backend code can be accessed here: https://github.com/AletteXin/Flask_Healthlato
 - Patients are able to create and login to an account to keep track of past forms 
 
 <img src="https://user-images.githubusercontent.com/85789376/194939039-db4a1118-6928-401c-82bf-4640bfa087f8.png" height="300"> 
+
 <img src="https://user-images.githubusercontent.com/85789376/194939037-e00f53d4-81b2-4922-8fdb-1534c7fb8af5.png" height="300"> 
 
 <img src="https://user-images.githubusercontent.com/85789376/194941261-094c5ca5-b8e2-4f63-8149-b78da1e825d4.png" height="300"> 
