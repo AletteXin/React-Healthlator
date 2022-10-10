@@ -31,8 +31,8 @@ Backend code can be accessed here: https://github.com/AletteXin/Flask_Healthlato
 
 ### Key features 
 
-##Easy and intuitive use of medical form 
-- Patients are able to fill a form to include personal details, current symptoms and chronic conditions
+**Easy and intuitive use of medical form**
+- Patients are able to list out their personal details, current symptoms and chronic conditions in a form
 <img src="https://user-images.githubusercontent.com/85789376/194939035-41e719bd-4fe6-4292-bacc-02b25dff15c9.png" height="300"> 
 
 - Once the form is filled out, patients will be given a form ID
@@ -45,35 +45,33 @@ Backend code can be accessed here: https://github.com/AletteXin/Flask_Healthlato
 
 
 
-##Login feature 
+**Login feature** 
 
 - Patients are able to create and login to an account to keep track of past forms 
 
 <img src="https://user-images.githubusercontent.com/85789376/194939039-db4a1118-6928-401c-82bf-4640bfa087f8.png" height="300"> 
 <img src="https://user-images.githubusercontent.com/85789376/194939037-e00f53d4-81b2-4922-8fdb-1534c7fb8af5.png" height="300"> 
 
-##Trilingual 
+**Trilingual**
 - The forms are trilingual (English, Chinese, Malay), enabling doctors with various language proficiencies comprehend the patient's current condition 
 
 English
 <img src="https://user-images.githubusercontent.com/85789376/194940467-43b80cb5-33cf-4ced-8e15-b8cc6035dc85.png" height="300"> 
 
-
 Chinese
-
 <img src="https://user-images.githubusercontent.com/85789376/194939032-f2bdd97a-4830-49d2-b7d8-6f2e305cb74d.png" height="300"> 
 
 Malay
 
 
 
-##Responsive design 
+**Responsive design**
 - Responsive UI/UX design for enhanced user experience across desktops and mobile phones 
 
 <img src="https://user-images.githubusercontent.com/85789376/194939040-c19affd9-2805-4805-9748-c40fbd2b38a4.png" height="300"> 
 
 
-##Medical fields advised by practising doctors 
+**Medical fields advised by practising doctors**
 - The relevance and comprehensiveness of the list of symptoms and chronic conditions on the form has been vetted by pracising doctors 
 
 ### Acknowledgements 
