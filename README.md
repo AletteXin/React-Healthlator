@@ -40,7 +40,7 @@ Backend code can be accessed here: https://github.com/AletteXin/Flask_Healthlato
 - Once the form is filled out, patients will be given a form ID
 <img src="https://user-images.githubusercontent.com/85789376/194938392-ab82f3f8-cd3a-4a5c-80e3-932d74362f1b.png" height="300"> 
 
-- Patients and doctors can retrieve the filled form by reentering the name and form ID on the retrive form page 
+- Patients and doctors can retrieve the filled form by reentering the name and form ID on the retrieve form page 
 <img src="https://user-images.githubusercontent.com/85789376/194939965-8318107c-b043-4c30-8e73-a1519ea5b172.png" height="300"> 
 
 <img src="https://user-images.githubusercontent.com/85789376/194939041-317ce278-5383-4f47-9c63-e861a725e2e0.png" height="300"> 
@@ -49,7 +49,7 @@ Backend code can be accessed here: https://github.com/AletteXin/Flask_Healthlato
 
 ### Login feature
 
-- Patients are able to create and login to an account to keep track of past forms 
+- Patients are able to create and account and login to keep track of past forms 
 
 <img src="https://user-images.githubusercontent.com/85789376/194939039-db4a1118-6928-401c-82bf-4640bfa087f8.png" height="300"> 
 
@@ -79,7 +79,7 @@ Backend code can be accessed here: https://github.com/AletteXin/Flask_Healthlato
 
 
 ### Medical fields advised by practising doctors
-- The relevance and comprehensiveness of the list of symptoms and chronic conditions on the form has been vetted by pracising doctors 
+- The relevance and comprehensiveness of the list of symptoms and chronic conditions on the form has been vetted by practising doctors 
 
 # Acknowledgements 
 This application has been beta tested by a panel of doctors who have contributed to refining medical terms and providing functionality suggestions to best serve patients and doctors. 
