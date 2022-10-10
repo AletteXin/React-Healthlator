@@ -112,7 +112,7 @@ function InputForm({ setEntryRecorded, entryRecorded }) {
     };
 
     const createNewForm = (e) => {
-        window.location.reload();
+        setEntryRecorded("False");
     };
 
 
