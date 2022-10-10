@@ -113,6 +113,12 @@ function InputForm({ setEntryRecorded, entryRecorded }) {
 
     const createNewForm = (e) => {
         setEntryRecorded("False");
+        setMedications("");
+        setName("");
+        setAddress("");
+        setRelativeNumber("");
+        setRelativeName("");
+        setReason("");
     };
 
 
