@@ -15,8 +15,8 @@ Options to login to access full range of features:
 First option: Click on 'My Portal" on the navigation bar and login via:
 
 The following login details:
- - username: hello
- - password: hello
+ - username: MaxFullerton
+ - password: Max123
 
 Second option: Fill in the "Sign Up" fields 
 
