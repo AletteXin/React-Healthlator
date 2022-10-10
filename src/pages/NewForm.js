@@ -1,12 +1,7 @@
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import HealthCard from './HealthCard';
-import Language from './Language';
-import InputForm from './InputForm';
-import UserInput from './UserInput';
-import Title from './Title';
-import React, { Suspense, useState, useEffect } from "react";
+import Language from '../components/Language';
+import InputForm from '../components/InputForm';
+import Title from '../components/Title';
+import React, { Suspense } from "react";
 
 
 

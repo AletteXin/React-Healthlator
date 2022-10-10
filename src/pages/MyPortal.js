@@ -1,9 +1,6 @@
 import Language from '../components/Language';
 import Title from '../components/Title';
 import HealthCard from '../components/HealthCard';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import { useTranslation } from "react-i18next";
 import { useState, useContext, useEffect } from 'react';
 

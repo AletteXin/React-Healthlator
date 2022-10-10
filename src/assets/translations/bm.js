@@ -7,8 +7,8 @@ export const translations_bm = {
     "retrieve.title": "REKOD LAMA",
     "formid.title": "Nombor borang",
     "submit.title": "Hantar",
-    "formretrieved.message": "Rekod anda telah dibina. Nombor borang tersebut: ",
-    "clearform.message": "Rekod anda ditunjukkan di bawah. Sila set semula sebelum meninggalkan halaman ini untuk mengosongkan borang.",
+    "formcreated.message": "Rekod anda telah dibina. Nombor borang tersebut: ",
+    "clearform.message": "Rekod anda ditunjukkan di bawah. Sila set semula untuk mengosongkan borang.",
     "reset.button": "Set semula",
 
     "portal.nav": "Portal saya",

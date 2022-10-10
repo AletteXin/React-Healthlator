@@ -3,7 +3,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import HealthCardField from './HealthCardField';
-import InputForm from './InputForm';
 import SymptomRow from './SymptomRow';
 import { useTranslation } from "react-i18next";
 import "../i18n";
@@ -189,7 +188,6 @@ function HealthCard({previousName, previousId, entryRecorded, setEntryRecorded})
                     </div>
                     
                 </div>
-                {/* } */}
 
         </div>
     );

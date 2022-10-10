@@ -1,4 +1,3 @@
-
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -21,7 +20,6 @@ function SignUp() {
     const createNewUser = (e) => {
         e.preventDefault()
         console.log("Connected")
-        // fetch('https://healthrecordcommunicator.herokuapp.com/api/user/create', {
         fetch('https://healthrecordalette.herokuapp.com/api/user/create', {
             method: 'POST',
             headers: {
@@ -39,7 +37,6 @@ function SignUp() {
             setMessage(data.message[0]);
         }))
 
-        // setToken("True")
     };
     return (
 

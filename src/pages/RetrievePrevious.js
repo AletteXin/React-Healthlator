@@ -1,16 +1,16 @@
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import HealthCard from './HealthCard';
-import Language from './Language';
-import InputForm from './InputForm';
-import UserInput from './UserInput';
-import Title from './Title';
-import React, { Suspense, useState, useEffect } from "react";
+import UserInput from '../components/UserInput';
+import React, { Suspense } from "react";
+import { useTranslation } from "react-i18next";
+import Language from '../components/Language';
+import Title from '../components/Title';
+import HealthCard from '../components/HealthCard';
+import "../i18n";
 
 function RetrievePrevious({ previousName, setPreviousName, previousId, setPreviousId, entryRecorded,
     setEntryRecorded }) {
 
+
+    const { t, i18n } = useTranslation();
 
     const clearForm = (e) => {
         setPreviousName("")
@@ -30,7 +30,7 @@ function RetrievePrevious({ previousName, setPreviousName, previousId, setPrevio
                         
                         {previousName != "" ?
                         (<div>
-                                <div>{t("formretrieved.message")}</div>
+                                <div>{t("clearform.message")}</div>
                                 <button onClick={(e) => clearForm(e)} className="submitbutton"> {t("reset.button")} </button>
                                 <HealthCard previousName={previousName} previousId={previousId}
                             entryRecorded={entryRecorded} setEntryRecorded={setEntryRecorded} />

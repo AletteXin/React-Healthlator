@@ -28,7 +28,7 @@ function LeftNav() {
                             isNavExpanded ? "navigationMenu expanded" : "navigationMenu"
                         }
                     >
-                        {/* <div className="leftBorder"> */}
+
                         <ul>
                             <li>
 

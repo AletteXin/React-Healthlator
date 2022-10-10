@@ -1,7 +1,6 @@
 import Language from './Language';
 import Title from './Title';
 import SignUp from './SignUp';
-import MyPortal from '../pages/MyPortal';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';

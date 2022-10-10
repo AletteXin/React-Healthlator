@@ -7,7 +7,7 @@ export const translations_en = {
     "retrieve.title": "RETRIEVE PREVIOUS RECORD",
     "formid.title": "Form ID",
     "submit.title": "Submit",
-    "formretrieved.message": "Your form has been created. Your Form ID is ",
+    "formcreated.message": "Your form has been created. Your Form ID is ",
     "clearform.message": "Your form is shown below. Please reset before leaving this page to clear form.",
     "reset.button": "Reset",
     
